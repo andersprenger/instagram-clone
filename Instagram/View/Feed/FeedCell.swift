@@ -22,7 +22,7 @@ struct FeedCell: View {
                 Text("joker")
                     .font(.system(size: 14, weight: .semibold))
             }
-            .padding(4)
+            .padding([.leading, .bottom], 8)
             
             //post image
             Image("joker")
@@ -32,43 +32,50 @@ struct FeedCell: View {
                 .clipped()
             
             // action buttons
-            HStack {
+            HStack (spacing: 16) {
                 Button(action: {}) {
                     Image(systemName: "heart")
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                     
                 }
                 
                 Button(action: {}) {
                     Image(systemName: "bubble.right")
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                     
                 }
                 
                 Button(action: {}) {
                     Image(systemName: "paperplane")
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                     
                 }
             }
             .foregroundColor(.black)
-            .padding(4)
+            .padding(8)
             
             // caption
+            Text("3 likes")
+                .font(.system(size: 14, weight: .semibold))
+                .padding(.leading, 8)
+                .padding(.bottom, 2)
+            
             HStack {
                 Text("joker")
                     .font(.system(size: 14, weight: .semibold)) +
                 Text(" I used to think that my life was a tragedy, but now I realize, it's a fucking comedy.")
                     .font(.system(size: 15))
             }
+            .padding(.horizontal, 8)
             
             Text("2d")
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
-                .padding(.top)
+                .padding(.leading, 8)
+                .padding(.top, 2)
         }
     }
 }
