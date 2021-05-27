@@ -38,7 +38,7 @@ struct MainTabView: View {
             }
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
-            .accentColor(.black)
+            .accentColor(Color("DynamicColor"))
         }
     }
 }

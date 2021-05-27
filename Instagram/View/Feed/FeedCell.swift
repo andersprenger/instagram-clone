@@ -12,23 +12,23 @@ struct FeedCell: View {
         VStack (alignment: .leading, spacing: 0){
             // user info
             HStack {
-                Image("joker")
+                Image("toninho")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)
                 
-                Text("joker")
+                Text("ironman")
                     .font(.system(size: 14, weight: .semibold))
             }
             .padding([.leading, .bottom], 8)
             
             //post image
-            Image("joker")
+            Image("toninho")
                 .resizable()
-                .scaledToFill()
-                .frame(maxWidth: UIScreen.main.bounds.size.width, maxHeight: 270)
+                .scaledToFit()
+                .frame(maxWidth: UIScreen.main.bounds.size.width)
                 .clipped()
             
             // action buttons
@@ -64,10 +64,10 @@ struct FeedCell: View {
                 .padding(.bottom, 2)
             
             HStack {
-                Text("joker")
+                Text("ironman")
                     .font(.system(size: 14, weight: .semibold)) +
-                Text(" I used to think that my life was a tragedy, but now I realize, it's a fucking comedy.")
-                    .font(.system(size: 15))
+                Text(" I told you. I don’t want to join your super secret boy band.")
+                    .font(.system(size: 14))
             }
             .padding(.horizontal, 8)
             
